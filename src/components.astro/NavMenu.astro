@@ -4,8 +4,8 @@
 
 <div class="navbackground">
   <div class="nav">
-    <a href="/Index">Home</a>
-    <a href="/KEA-MMD">KEA-MMD</a>
+    <a class="home" href="index.html">Home</a>
+    <a class="KEA-MMD" href="/KEA-MMD">KEA-MMD</a>
     <img src="white-logo.png" alt="">
     <div class="Portfolio">
       <button class="dropbtn">Portfolio 
@@ -99,5 +99,50 @@
 
 .Portfolio:hover .dropdown-content {
   display: block;
+}
+
+
+
+@media screen and (max-width: 820px) {
+  img{
+    width: 17%;
+
+  }
+}
+
+@media screen and (max-width: 391px) {
+  img{
+    width: 22%;
+
+  }
+
+  .Portfolio{
+    margin-top: 1.5em;
+  }
+  .Portfolio .dropbtn{
+    padding: 0;
+    margin-top: 0;
+  }
+
+  a{
+    font-size: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  .nav{
+    margin-left: 0;
+  }
+
+  .dropbtn{
+    font-size: 0.5rem;
+  }
+
+  .KEA-MMD{
+    margin-left: 0.5rem;
+  }
+
+  .home{
+    margin-left: 4em;
+  }
 }
 </style>
