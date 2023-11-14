@@ -1,6 +1,7 @@
 ---
 import NavMenu from "../components.astro/NavMenu.astro";
 import ForsideImg from "../components.astro/ForsideImg.astro";
+import Layout from "../Layout.astro/Layout.astro";
 ---
 
 <html lang="en">
@@ -12,7 +13,9 @@ import ForsideImg from "../components.astro/ForsideImg.astro";
 		<title>Astro</title>
 	</head>
 	<body>
-		<NavMenu />
+
+	<Layout>
 		<ForsideImg />
+	</Layout>
 	</body>
 </html>
