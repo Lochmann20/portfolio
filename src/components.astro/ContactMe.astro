@@ -18,16 +18,16 @@
     <div class="container">
         <form action="/action_page.php">
           <label for="fname">Full Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <input class="input" type="text" id="fname" name="firstname" placeholder="Your name..">
       
           <label for="lname">Number</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your number..">
+          <input class="input" type="text" id="fname" name="firstname" placeholder="Your number..">
       
           <label for="country">Email</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your Email..">
+          <input class="input" type="text" id="fname" name="firstname" placeholder="Your Email..">
       
           <label for="subject">Message</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:125px"></textarea>
+          <textarea class="input" id="subject" name="subject" placeholder="Write something.." style="height:125px"></textarea>
       
           <input type="submit" value="Send">
         </form>
@@ -130,5 +130,47 @@
     }
     
     
+    @media screen and (max-width: 820px) {
+        .CM{
+            padding: 40px;
+        }
+
+        .contactMe{
+            gap: 3%;
+        }
+
+        p{
+            font-size: 3rem;
+        }
+
+        h3{
+            font-size: 1.5rem;
+        }
+    }
+
+
+    @media screen and (max-width: 391px) {
+        .contactMe{
+            display: flow;
+            padding: 30px;
+        }
+
+        .input{
+            width: 330%;
+        }
+
+        #fname{
+            width: 330%;
+        }
+
+        p{
+            margin-top: 0;
+        }
+
+
+        .container{
+            margin-top: 2em;
+        }
+    }
     
     </style>
